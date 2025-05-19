@@ -1,1 +1,61 @@
-{"name":"My Awesome App","short_name":"MyApp","description":"My Awesome App description","start_url":"/","display":"standalone","background_color":"#ffffff","theme_color":"#ffffff","lang":"en","scope":"/","icons":[{"src":"/pwa-192x192.png","sizes":"192x192","type":"image/png","purpose":"any"},{"src":"/pwa-512x512.png","sizes":"512x512","type":"image/png","purpose":"any"},{"src":"/pwa-maskable-192x192.png","sizes":"192x192","type":"image/png","purpose":"maskable"},{"src":"/pwa-maskable-512x512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}],"screenshots":[{"src":"/images/narrow.png","type":"image/png","sizes":"540x720","form_factor":"narrow"},{"src":"/images/wide.png","type":"image/png","sizes":"720x540","form_factor":"wide"}]}
+{
+  "name": "My Awesome App",
+
+  "share_target": {
+    "action": "index.html",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+
+  "short_name": "MyApp",
+  "description": "My Awesome App description",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "lang": "en",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/narrow.png",
+      "type": "image/png",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/wide.png",
+      "type": "image/png",
+      "sizes": "720x540",
+      "form_factor": "wide"
+    }
+  ]
+}

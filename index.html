@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,9 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Vue + TS</title>
     <script type="module" crossorigin src="/assets/index-BPo1tr06.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-1byZ3dr3.css">
-  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+    <link rel="stylesheet" crossorigin href="/assets/index-1byZ3dr3.css" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script>
+  </head>
   <body>
     <div id="app"></div>
+
+    <div>
+      <b><code>window.location</code>:</b> <code id="href"></code><br />
+      <b>Title:</b> <code id="title"></code><br />
+      <b>Text:</b> <code id="text"></code><br />
+      <b>URL:</b> <code id="url"></code>
+    </div>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("href").textContent = window.location.href;
+        const parsedUrl = new URL(window.location);
+        document.getElementById("title").textContent =
+          parsedUrl.searchParams.get("title");
+        document.getElementById("text").textContent =
+          parsedUrl.searchParams.get("text");
+        document.getElementById("url").textContent =
+          parsedUrl.searchParams.get("url");
+      });
+    </script>
   </body>
 </html>
